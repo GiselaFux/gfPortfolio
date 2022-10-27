@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/header') %>
+    <div class="contenedorContacto">
+    <h3>Formulario de contacto</h3>
+   
+      
+    <form class="contactForm" id="contactForm"action="store" method="POST">
+      
+        <label for="nameLastname">Apellido y nombre.</label>
+        <input type="text" name="nameLastname" id="nameLastname" value="<% locals.old && old.nameLastname ? old.nameLastname : ''%>">
+        <span class="div-nameLastname-errors"></span>
+        <% if (locals.errors && errors.nameLastname) { %>
+          <div class="errors"> <%= errors.nameLastname.msg %></div>                    
+      <% } %>
+
+        <label for="email">Email.</label>
+        <input type="email" name="email" id="email" value="<% locals.old && old.email ? old.email : ''%>">
+        <span class="div-email-errors"></span>
+        <% if (locals.errors && errors.email) { %>
+          <div class="errors"> <%= errors.email.msg %></div>                    
+      <% } %>
+
+        <label for="mesaje">Comentarios</label>
+        <textarea name="mesaje" id="mesaje" maxLength="150" cols="20" rows="20" placeholder="Ingresa tu comentario" value="<% locals.old && old.mesaje ? old.mesaje : ''%>"></textarea>
+        <span class="div-mesaje-errors"></span>
+        <% if (locals.errors && errors.mesaje) { %>
+          <div class="errors"> <%= errors.mesaje.msg %></div>                    
+      <% } %>
+        <button type="submit">Enviar</button>
+    
+    </form>
+    <div class="ubicacion">
+        <h3>¿Dónde me encuentro?</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.834007918814!2d-64.47987364960557!3d-31.114345288728806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8260498d699b%3A0xd4263748bea7922f!2sGdor.%20C%C3%A1rcano%20789%2C%20X5168%20Valle%20Hermoso%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1664504407835!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="enlaces">
+      <ul>
+        <li><i class="fa-solid fa-mobile-retro"></i> +54 9 3548  605596</li>
+        <li><i class="fa-regular fa-envelope"></i><a href="https://mail.google.com">giselafux@gmail.com</a></li>
+      </ul>
+    </div>
+</div>
+<script src="/javascripts/validateUser.js"></script>
+</body>
+</html>
