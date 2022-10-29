@@ -10,7 +10,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             type: dataTypes.STRING
         },
-        img:{
+        skillImg:{
             allowNull:false,
             type: dataTypes.STRING
         },

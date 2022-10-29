@@ -10,7 +10,7 @@ module. exports = (sequelize, dataTypes) => {
             allowNull: false,
             type: dataTypes.STRING
         },
-        img:{
+        projectImg:{
             allowNull:false,
             type: dataTypes.STRING
         },

@@ -1,5 +1,5 @@
-const path=require('path');
-const fs= require('fs');
+const path = require('path');
+const fs = require('fs');
 const { validationResult } = require('express-validator');
 /* requiero el modulo User de a carpeta models */
 //const db = require('../database/models');
@@ -10,7 +10,8 @@ const userController = {
    user: (req, res) => {
  res.render('user')
 },
-store: (req, res) => {
+store: async(req, res) => {
+  
   const resultValidation = validationResult(req);
          console.log(resultValidation)
         if(resultValidation.errors.length >0){
@@ -19,13 +20,14 @@ store: (req, res) => {
         old: req.body
                })
            }
-         db.User.create({
+         await db.User.create({
             nameLastname:req.body.nameLastname,
             email:req.body.email,
             mesaje:req.body.mesaje,
     })
-        return res.redirect('/')
-        }
+        return res.redirect('/aboutMe')
+        },
+        
 
 }
 
