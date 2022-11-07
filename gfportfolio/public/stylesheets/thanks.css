@@ -1,0 +1,18 @@
+* {
+    margin:0;
+   box-sizing: border-box;
+  }
+ 
+  
+  .thanksContent{
+    width:95vw;
+    height: 95vh;
+    margin:2.5vh 2.5vw;
+    padding:10vh 20vw;
+    background-color: rgb(142, 226, 226);;
+  }
+  img{
+    margin-top: 5vh;
+    width: 60vw;
+    height: 80vh;
+  }

@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias="Location";
+    let alias="Locations";
     let cols = {
         id:{
             autoIncrement: true,
@@ -19,7 +19,7 @@ timestamps: false
 
      Location.associate =(models) =>{
         //Projects
-        Location.hasMany(models.Project,{
+        Location.hasMany(models.Projects,{
             as:"projects",
             foreignKey:"locations_id",
         })

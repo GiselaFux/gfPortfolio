@@ -1,5 +1,5 @@
 module. exports = (sequelize, dataTypes) => {
-    let alias="Project";
+    let alias="Projects";
     let cols = {
         id:{
             autoIncrement: true,
@@ -29,12 +29,12 @@ timestamps: false
      const Project = sequelize.define(alias,cols,config);
      Project.associate = (models) => {
         //location
-     Project.belongsTo(models.Location,{
+     Project.belongsTo(models.Locations,{
         as:"location",
         foreignKey:"locations_id"
     });
     //skill
-     Project.belongsToMany(models.Skill,{
+     Project.belongsToMany(models.Skills,{
         as:"skills",
         through:"projects_skills",
         foreignKey:"projects_id",

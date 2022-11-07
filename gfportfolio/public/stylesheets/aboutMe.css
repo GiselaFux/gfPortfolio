@@ -1,38 +1,41 @@
 * {
-    margin:0;
-   box-sizing: border-box;
-  }
-  body{
-    
-   background-color:black;
-   display:flex;
-   align-items: center;
-  }
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .contenedorAboutMe{
-    width:100%;
-    height: 100vh;
-  }
-  .contImgAboutMe{
-    width:100vw;
-    padding-left: 30vw;  
-  }
-  .imagenAbout{
-    margin-top: 12vh;
-    width:33vw;
-    height: auto;
-  }
-  .textoAboutMe{
-    font-family: 'Roboto';
-    color:#4fffd0;
-    text-align: center;
-    width:80%;
-    height: 48vh;
-    margin-left: 10vw;
-    }
+body {
 
-p{
- 
-  margin:3%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+.contenedorAboutMe {
+  width: 100%;
+  height: 100vh;
+}
+
+.contImgAboutMe {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+
+}
+
+.imagenAbout {
+  margin: 8rem auto;
+  width: 33vw;
+  height: auto;
+}
+
+.textoAboutMe {
+  font-family: 'Roboto';
+  color: #4fffd0;
+  text-align: center;
+}
+
+p {
+
+  margin: 3%;
   line-height: 1.6;
 }

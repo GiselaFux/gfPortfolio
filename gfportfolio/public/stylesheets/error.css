@@ -1,0 +1,13 @@
+* {
+    margin:0;
+   box-sizing: border-box;
+  }
+  body{
+    
+   background-color:black;
+   display:flex;
+   align-items: center;
+  }
+  .imgError{
+   margin:10vh 20vw;
+  }
