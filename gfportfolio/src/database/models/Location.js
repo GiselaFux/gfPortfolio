@@ -24,5 +24,7 @@ timestamps: false
             foreignKey:"locations_id",
         })
 
-     return Location;
-}}
+     
+}
+return Location;
+}

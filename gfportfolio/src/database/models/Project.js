@@ -30,7 +30,7 @@ timestamps: false
      Project.associate = (models) => {
         //location
      Project.belongsTo(models.Locations,{
-        as:"location",
+        as:"locations",
         foreignKey:"locations_id"
     });
     //skill

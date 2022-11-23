@@ -8,7 +8,7 @@
     height: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-color:black;
+    background-color:#4fffd0;
 }    
 .contactForm{
     height: 75vh;
@@ -81,7 +81,7 @@ a{
         margin: 10vh;
         padding-left: 10vw;
         padding-right: 10vw;
-        background-color: black;
+        background-color:#4fffd0 ;
     }    
     .contactForm{
         display: flex;
@@ -103,15 +103,18 @@ a{
         width:90vw;
         height: 100vh;
         margin: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        background-color: black;
+         padding-left: 5vw;
+        padding-right: 15vw; 
+        background-color: #4fffd0;
     }    
     .contactForm{
+        width: 80vw;
         display: flex;
         flex-direction: column;
-        margin:5vh 10vw  2vh 10vw;
-        background-color: black;
+        margin:auto;
+        padding-left: 15vw;
+        background-color: #4fffd0;
+        border: solid 3px #8e15f5;
     }
     .ubicacion{
         width:90vw;
