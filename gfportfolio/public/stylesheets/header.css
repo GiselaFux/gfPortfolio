@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #c21d17;
+    height: 160px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    filter: drop-shadow(0 0 0.75rem #330807);
+    z-index: 1000;
+}
+
+.icon- {
+    margin: 3px;
+    padding: 1px;
+}
+
+nav {
+    background-color: #c21d17;
+    padding-left: 0;
+}
+
+a {
+    width: 15vw;
+    font-size: 8rem;
+}
+li:hover{
+    background-color:#d9d9d9 ;
+    padding: 2px;
+}

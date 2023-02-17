@@ -1,4 +1,4 @@
- * {
+ /* * {
     padding:0;
       margin:0;
      box-sizing: border-box;
@@ -6,15 +6,15 @@
 body{
     width: 100%;
     height: 100%;
-    
 }
 
 .contenedorConocimiento{
     width:90vw;
     height:90vh;
      border: 4px solid white;
-     margin-top: 10vh;
-     margin-left: 5vw;
+     margin-top: 37%;
+     padding-top: 5%;
+     margin-left: 5%;
      display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -83,12 +83,14 @@ body{
             transform: none;
         }
     }
+    
+    
     @media(min-width:760px){
         .contenedorConocimiento{
             width:90vw;
             height:90vh;
              border: 4px solid white;
-             margin-top: 10vh;
+             margin-top: 20%;
              margin-left: 5vw;
              display:flex;
             flex-direction: row;
@@ -97,4 +99,92 @@ body{
                  }
     }
  
+  */
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .contenedor{
+     width: 90vw;
+     height: auto;
+    /*  border: 4px solid white; */
+     margin-top: 20vh;
+     margin-left: 5vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .cubo {
+    width: 100px;
+    height: 100px;
+    position:relative;
+    transform-style: preserve-3d;
+    animation:girar 5s infinite linear;
+}
+
+@keyframes girar{
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+
  
+ .cara{
+    position:absolute;
+    
+    width:100%;
+    height: 100%;
+ }
+.cara img{
+    width:100px;
+    height: 100px; 
+    object-fit: cover;
+}
+#uno{
+    transform:translateZ(50px)
+}
+#dos{
+ transform: translateX(50px) rotateY(90deg)
+}
+#tres{
+    transform:translateZ(-50px) rotateY(180deg)
+}
+#cuatro{
+    transform:translateX(-50px) rotateY(270deg)
+}
+#cinco{
+    transform:translateY(-50px) rotateX(90deg)
+}
+#seis{
+    transform:translateY(50px) rotate(90deg)
+}
+#siete{
+    transform:rotateX(180deg)
+}
+@media(min-width:760px){
+    .contenedor{
+        width:90vw;
+        height:90vh;
+         border: 4px solid white;
+         margin-top: 20%;
+         padding-top: 5vh;
+         margin-left: 5vw;
+         display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+         align-items: center;
+             }
+}

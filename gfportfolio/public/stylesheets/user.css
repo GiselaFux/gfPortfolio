@@ -8,7 +8,7 @@
     height: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
-    background-color:#4fffd0;
+    background-color:black;
 }    
 .contactForm{
     height: 75vh;
@@ -21,12 +21,12 @@
 }
 
 h3{
-    color:#8e15f5;
+    color:#d9d9d9;
     margin-top: 15vh;
     margin-bottom: 2vh;
 }
 label{
-    color:#8e15f5;
+    color:#d9d9d9;
    margin-top: 1vh;
    margin-bottom: 1vh;
 }
@@ -41,7 +41,7 @@ input{
     background-color:black;
 }
 iframe{
-    box-shadow: 0px 5px 10px #4fffd0;
+    box-shadow: 0px 5px 10px black;
     width:59vw;
     height:55vh;
 }
@@ -56,14 +56,14 @@ ul{
     display: flex;
 }
 i{
-    color:#4fffd0;
+    color:#a4a5a6;
     width: 1vw;
     height: 1vh;
     margin-right: 1vw;
  
 }
 li{
-    color:#8e15f5;
+    color:#d9d9d9;
     font-size: 1rem;
     list-style: none;
     
@@ -81,7 +81,7 @@ a{
         margin: 10vh;
         padding-left: 10vw;
         padding-right: 10vw;
-        background-color:#4fffd0 ;
+        background-color:black;
     }    
     .contactForm{
         display: flex;
@@ -105,7 +105,7 @@ a{
         margin: 10vh;
          padding-left: 5vw;
         padding-right: 15vw; 
-        background-color: #4fffd0;
+        background-color: black;
     }    
     .contactForm{
         width: 80vw;
@@ -113,8 +113,8 @@ a{
         flex-direction: column;
         margin:auto;
         padding-left: 15vw;
-        background-color: #4fffd0;
-        border: solid 3px #8e15f5;
+        background-color: black;
+        border: solid 3px #d9d9d9;
     }
     .ubicacion{
         width:90vw;
@@ -128,7 +128,7 @@ a{
         justify-content: space-around;
     }
     li{
-        color:#8e15f5;
+        color:#c21d17;
         font-size: 1rem;
         list-style: none;
     }

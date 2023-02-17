@@ -4,7 +4,6 @@
 }
 
 body {
-
   background-color: black;
   display: flex;
   align-items: center;
@@ -18,24 +17,28 @@ body {
 .contImgAboutMe {
   display: flex;
   justify-content: center;
-  width: 100vw;
-
+  width: 25vw;
+  filter: grayscale(100%);
+  margin: 23vh 38vw 2vh 38vw;
 }
 
 .imagenAbout {
-  margin: 8rem auto;
-  width: 33vw;
+  width: 23vw;
   height: auto;
+  border-radius: 50%;
+  border: 2px solid gray;
 }
 
 .textoAboutMe {
   font-family: 'Roboto';
-  color: #4fffd0;
+  color: whitesmoke;
   text-align: center;
 }
 
 p {
-
-  margin: 3%;
+  margin: 2%;
   line-height: 1.6;
+}
+.textoAboutMe h1{
+  color:#c21d17;
 }
